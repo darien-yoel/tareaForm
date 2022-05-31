@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+    <title>Despegando.com</title>
+  </head>
+
+  <body>
+    <header class="hero">
+      <h1 class="title">Vuelos con reserva flexible</h1>
+    </header>
+
+    <main>
+      <h2 class="subtitle">
+        Encontrá pasajes aéreos con la posibilidad de cambiar las fechas de
+        vuelo.
+      </h2>
+
+      <form>
+        <div class="radio">
+          <label class="container_radio">
+            <input type="radio" name="viajes" id="ida" />
+            <p class="text_input">Ida y vuelta</p>
+          </label>
+
+          <label class="container_radio">
+            <input type="radio" name="viajes" id="idasolo" />
+            <p class="text_input">Solo ida</p>
+          </label>
+
+          <label class="container_radio">
+            <input type="radio" name="viajes" id="multi" />
+            <p class="text_input">Multidestino</p>
+          </label>
+        </div>
+
+        <div class="viaje">
+          <div class="containerLabel">
+            <label>
+              <p class="containerTitle">ORIGEN</p>
+              <!-- <i class="fa-regular fa-circle"></i> -->
+              <input
+                type="text"
+                name="origen"
+                id="viaje_viaje"
+                placeholder="Buenos Aires, Argentina"
+              />
+            </label>
+          </div>
+
+          <div class="containerLabel">
+            <label>
+              <p class="containerTitle">DESTINO</p>
+              <!-- <i class="fa-solid fa-location-dot"></i> -->
+              <input
+                type="text"
+                name="destino"
+                id="viaje_viaje"
+                placeholder="Ingresá hacía donde viajas"
+              />
+            </label>
+          </div>
+
+          <div class="containerLabel">
+            <label>
+              <p class="containerTitle">FECHAS</p>
+              <input
+                type="date"
+                name="fecha"
+                id="fecha_ida"
+                placeholder="Ida"
+              />
+            </label>
+          </div>
+
+          <div class="containerLabel">
+            <br />
+            <br />
+            <label>
+              <input
+                type="date"
+                name="fecha"
+                id="fecha_vuelta"
+                placeholder="Vuelta"
+              />
+            </label>
+          </div>
+
+          <div class="containerSelect">
+            <p>Pasajeros y clase</p>
+            <!-- <i class="fa-solid fa-user"></i> -->
+            <select class="pasajeros" name="pasajeros" id="clase">
+              <option value="economica">1 persona, economica</option>
+              <option value="economica2">2 persona, economica</option>
+              <option value="premiun">1 persona, primera</option>
+              <option value="premiun2">2 persona, primera</option>
+              <option value="media">1 persona, media</option>
+              <option value="media2">2 persona, media</option>
+            </select>
+          </div>
+
+          <br>
+          <br>
+          <button class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i> Buscar
+          </button>
+        </div>
+
+        <div class="sinFecha">
+          <label class="checkSinFecha">
+            <input type="checkbox" name="check" id="check" value="false" />
+            <p class="textCheck">Todavía no he decidido la fecha</p>
+          </label>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/8635a272e7.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
